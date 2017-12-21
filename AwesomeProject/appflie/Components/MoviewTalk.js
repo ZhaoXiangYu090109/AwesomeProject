@@ -52,10 +52,12 @@ class MoviewTalk extends React.Component{
             .done();
     }
     showMovieDetail(movie){
+
             this.props.navigator.push({
 
-                    title:movie.title,
+                title:movie.title,
                 component:MovieDetail,
+                passProps:{movie},
             });
 
     }
@@ -69,10 +71,12 @@ class MoviewTalk extends React.Component{
             <View style={styles.item}>
                 <View style = {styles.itemImage}>
 
-                    <Image source={{uri:'https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p17525.jpg'}}
+
+                    <Image source={{uri:movie.images.large}}
                            style = {styles.image}
 
                     />
+
 
                 </View>
                 <View style = {styles.itemContent } >

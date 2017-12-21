@@ -63,7 +63,7 @@ class USBox extends React.Component{
                 <View style={styles.item}>
                     <View style = {styles.itemImage}>
 
-                        <Image source={{uri:'https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p17525.jpg'}}
+                        <Image source={{uri:movie.subject.images.large}}
                                style = {styles.image}
 
                         />

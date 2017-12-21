@@ -15,6 +15,13 @@ import {
 const  REQUEST_URL ='https://api.douban.com/v2/movie/top250';
 class MovieDetail extends React.Component{
 
+
+    constructor(props){
+        super(props);
+        // alert(this.props.movie)
+
+    }
+
     render(){
     return(
         <View>
