@@ -37,7 +37,10 @@ const  REQUEST_URL ='https://api.douban.com/v2/movie/top250';
 
     	
         return(
-            <TabBarIOS>
+            <TabBarIOS
+                barTintColor='darkslateblue'
+                tintColor='white'
+            >
                 <TabBarIOS.Item systemIcon={'featured'}
                                 selected={this.state.selectedTab==='featured'}
                                 onPress={()=>{
